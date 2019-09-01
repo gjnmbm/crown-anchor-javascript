@@ -1,3 +1,4 @@
+'use strict';
 let funds = 50;
 let bets = {};
 let hand = [];
