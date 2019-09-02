@@ -5,6 +5,7 @@ let hand = [];
 
 function onRoll() {
 	console.log("Button pressed!");
+	console.log("What fun!");
 }
 bets = { heart: 5, };
 
