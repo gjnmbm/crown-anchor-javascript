@@ -5,11 +5,22 @@
 	</head>
 	<body>
 		<h1>Crown and Anchor Game</h1>
-		<script src = "https://cdn.jsdelivr.net/gh/gjnmbm/crown-anchor-javascript@master/cAndA.js"></script>
-		<button type="button">&#9824 </button>
-		<button type="button">&#9827 </button>
-		<button type="button">&#9829 </button>
-		<button type="button">&#9830 </button>
+		<p>Press one of the symbols to place your bets!</p>
+		<!--<script src = "https://cdn.jsdelivr.net/gh/gjnmbm/crown-anchor-javascript@master/cAndA.js"></script>-->
+		<!--If script is in the same folder as html file, just load the js file-->
+		<script src = "cAndA.js"></script>
+		<input type="image" src="images/club.png" onclick="placeBet('club')"/>
+		<p id = "club" >Bet placed:</p>
+		<input type="image" src="images/spade.png" onclick="placeBet('spade')"/>
+		<p id="spade">Bet placed:</p>
+		<input type="image" src="images/heart.png" onclick="placeBet('heart')"/>
+		<p id = "heart">Bet placed:</p>
+		<input type="image" src="images/diamond.png" onclick="placeBet('diamond')"/>
+		<p id = "diamond">Bet placed:</p>
+		<input type="image" src="images/crown.png" onclick="placeBet('crown')"/>
+		<p id = "crown">Bet placed:</p>
+		<input type="image" src="images/anchor.png" onclick="placeBet('anchor')"/> 
+		<p id = "anchor">Bet placed:</p>
 		<button type="button" onclick="onRoll()">Click here to roll the dice!</button>
 	</body>
 </html>

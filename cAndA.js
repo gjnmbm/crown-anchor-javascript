@@ -7,6 +7,8 @@ function onRoll() {
 	console.log("Button pressed!");
 	console.log("What fun!");
 }
-bets = { heart: 5, };
 
-console.log(bets.heart);
+function placeBet(suit) {
+	let bet = prompt("How much will you bet here?", 0);
+	document.getElementById(`${suit}`).textContent =`Bet placed: ${bet} pence`;
+}
